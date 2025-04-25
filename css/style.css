@@ -6,3 +6,65 @@
   font-weight: 400;
   font-style: normal;
 }
+
+header{
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 45px 240px;
+
+}
+.navbar{
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  gap: 26px;
+}
+.list-item{
+  list-style: none;
+  font-size: 1.25rem;
+}
+.nav-link{
+  text-decoration: none;
+}
+.banner-content{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn-primary{
+  margin-bottom: 50px;
+  background-color: #FF900E;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  padding: 20px 25px;
+}
+.banner-title{
+  margin-bottom: 30px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+  
+}
+.brand{
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #424242;
+}
+.banner-img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body{
+  margin: 0 auto;
+  height: 100vh;
+}
