@@ -31,6 +31,7 @@ header{
 }
 .nav-link{
   text-decoration: none;
+  color: #4515f1;
 }
 .banner-content{
   align-items: center;
@@ -67,4 +68,62 @@ header{
 body{
   margin: 0 auto;
   height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  header{
+    padding: 0px;
+  }
+  .navbar{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+   
+    
+    
+  }
+  .nav-links{
+    justify-content: center;
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: hidden;
+    gap: 10px;
+    padding: 0px 5px ;
+    margin-top: 0px;
+  }
+  .banner-title{
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+  }
+  .btn-primary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 15pxpx;
+  }
+  .btn-primary:hover{
+    box-shadow: 0px 0px 10px  rgba(237, 8, 176, 0.779);
+    transition: box-shadow 0.3s ease;
+    background-color: #5ae0b3;
+    color: #424242;
+    font-weight: bold;
+  }
+
+  .banner-img{
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 0px 10px;
+    
+  }
+
+  .brand{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #424242;
+  }
+ 
 }
