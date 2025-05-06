@@ -6,38 +6,52 @@
   font-weight: 400;
   font-style: normal;
 }
-
+/* Header */
 header{
   background-color: rgba(255, 144, 14, 0.1);
-  padding: 45px 240px;
+  padding: 10px 240px 45px 240px;
 
 }
+
+.body{
+  margin: 0 auto;
+  
+}
+
+/* Navbar */
 .navbar{
   display: flex;
-  
+  padding: 0px 20px;
+  box-shadow: 0px 0px 10px rgba(44, 49, 49, 0.2);
+  background-color: #38c22bf1;
+  border-radius: 8px;
   justify-content: space-between;
   align-items: center;
+  height: 120px;
+  
 }
 .nav-links{
   display: flex;
   flex-wrap: wrap;
-  
-  
   gap: 26px;
 }
+
 .list-item{
   list-style: none;
   font-size: 1.25rem;
 }
+
 .nav-link{
   text-decoration: none;
   color: #4515f1;
 }
+
 .banner-content{
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .btn-primary{
   margin-bottom: 50px;
   background-color: #FF900E;
@@ -48,41 +62,45 @@ header{
   border: none;
   padding: 20px 25px;
 }
+
 .banner-title{
   margin-bottom: 30px;
   font-size: 4rem;
   font-weight: 700;
   color: #131313;
-  
 }
+
 .brand{
   font-size: 2.8rem;
   font-weight: 700;
   color: #424242;
 }
+
 .banner-img{
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
+
 body{
   margin: 0 auto;
   height: 100vh;
-}
+}/* Header basic style for pc end */
 
+/* Responsive for small devices Start */
+
+/* Responsive for small devices End */
+
+/*  Responsive for medium devices start */
 @media screen and (max-width: 992px) {
   header{
     padding: 0px;
   }
   .navbar{
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: none;
-   
-    
-    
   }
   .nav-links{
     justify-content: center;
@@ -124,16 +142,15 @@ body{
     font-size: 2.5rem;
     font-weight: 700;
     color: #424242;
-  }
- 
-}
+  } 
+} /* Responsive for medium devices end */
 
-/* Main style =start */
+/* Main style start */
 .main{
   max-width: 1440px;
-  /* padding: 0px 240px; */
 }
 
+/* Feature Section */
 .feature-section{
   display: flex;
   padding: 85px 240px 130px 240px;
@@ -149,37 +166,43 @@ body{
    "team1 team2"
    "team3 team4";
 }
+
 #team1{
   grid-area: team1;
 }
+
 #team2{
   grid-area: team2;
 }
+
 #team3{
   grid-area: team3;
 }
+
 #team4{
   grid-area: team4;
 }
 
 .feature-details{
-  /* margin: 0 auto; */
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
+
 .f-t-span1{
   color: #727272;
   font-size: 2.8rem;  
   font-weight: 600;
 }
+
 .f-t-span2{
   color: #131313;
   font-size: 2.8rem;  
   font-weight: 600;
 }
+
 .f-t-span3{
   color: #FF900E;
   font-size: 2.8rem;  
@@ -191,6 +214,7 @@ body{
   font-size: 1.25rem;
   line-height: 26px;
 }
+
 .btn-feature{
   margin-bottom: 50px;
   background-color: #FF900E;
@@ -200,7 +224,94 @@ body{
   font-weight: 600;
   border: none;
   padding: 20px 25px;
+}/* feature section end */
 
+/* Experience Section Basic style start */
+.ex-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 120px;
+  margin: 20px 240px 130px 240px;
+  box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
+  padding:0px 5px;
+  border-radius: 5px;
 }
 
+.experience-container{
+  width: 50%;
+}
+
+.ex-title{
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: #131313;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+
+.ex-description{
+  font-size: 1rem;
+  font-weight: regular;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 30px;
+}
+
+.item-container{
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.item-title{
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #131313;
+}
+
+.item-description{
+  font-size: 1rem;
+  font-weight: regular;
+  line-height: 26px;
+  color: #727272;
+}
+
+.experience-image{
+  width: 50%;
+}
+
+.experience-image img{
+  width: 100%;
+  max-height: 982px;
+  object-fit: cover;
+  height: auto;
+}
+
+.experience-logo{
+
+  background-color: #FF900E;
+  color: #FFFFFF;
+  padding: 30px;
+  margin-left: -92px;
+  margin-top: -92px;
+  border-radius: 8px;
+  border: none;
+}
+
+#years{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#experience{
+  font-size: 1.5rem;
+  font-weight: 500;
+}/* experience section end */
+
+/* Media Quaries for "Feature & Experience Section" */
+/* For small devices */
+/* For medium devices */
 
