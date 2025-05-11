@@ -41,7 +41,12 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: #4515f1;
+  color: #1cdcac;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff0e76;
 }
 
 .banner-content {
@@ -615,3 +620,54 @@ body {
 }
 
 /* Summary Section End */
+
+/* Sponsor Section Start */
+
+.sponsor-detail {
+  margin: 0px 240px 50px 240px;
+  text-align: center;
+  padding: 5px;
+}
+.spon-title {
+  font-size: 2.75rem;
+  color: #131313;
+}
+.spon-descrioption {
+  font-size: 1rem;
+  color: #727272;
+  line-height: 26px;
+}
+
+.sponsor-image {
+  margin: 0px 240px 130px 240px;
+  display: flex;
+  align-items: center;
+  gap: 155px;
+}
+
+.sponsor-icon {
+  width: 166px;
+  height: 50px;
+}
+
+.sponsor-icon img {
+  width: 100%;
+  height: auto;
+}
+/* Sponsor Section End */
+
+/* Footer Start */
+.footer {
+  margin: 0px 240px 200px 240px;
+}
+
+.footer-title {
+  background-color: #fff4e7;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-span {
+  color: #424242;
+  font-size: 1.25rem;
+}
