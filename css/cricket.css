@@ -1,0 +1,32 @@
+.title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.cricket {
+  border: 2px solid green;
+  background-color: greenyellow;
+}
+.bat {
+  /* background-color: greenyellow; */
+  width: 300px;
+  height: auto;
+  transition: transform 0.2s ease-in;
+}
+.ball {
+  width: 50px;
+  height: 60px;
+  background-color: brown;
+  border-radius: 50%;
+  position: relative;
+  left: 480px;
+  transition: transform 0.8s ease-out 0.2s;
+}
+.cricket:hover .bat {
+  transform: scaleY(1.2) rotate(-50deg);
+  transform-origin: top right;
+}
+
+.cricket:hover .ball {
+  transform: translate(400px, -300px);
+}
