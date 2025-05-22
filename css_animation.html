@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation </title>
+
+    <style>
+        @keyframes animation-ball {
+            0% {
+                top: 125px;
+                left: 0;
+            }
+
+            25% {
+                top: 250px;
+                left: 150px;
+            }
+
+            50% {
+                top: 125px;
+                left: 300px;
+            }
+
+            75% {
+                top: 250px;
+                left: 450px;
+            }
+
+            100% {
+                top: 125px;
+                left: 550px;
+            }
+        }
+
+        .pitch {
+            width: 600px;
+            height: 300px;
+            background-color: green;
+            border: 2px solid red;
+        }
+
+        .bounch {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            top: 125px;
+            left: 0;
+            background-color: red;
+        }
+
+        .pitch:hover .bounch {
+            animation: animation-ball 3s linear 0s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Css Animation</h2>
+    <div class="pitch">
+        <div class="bounch">
+
+        </div>
+    </div>
+</body>
+
+</html>
